@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Grotesk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* === Variable define === */
+:root{
+    --body-color:#120A17;
+    --dark-color:#1B161D;
+    --white-color:#FFFFFF;
+    --main-color:#32253B;
+    --aqua-color:#74FBFB;
+    --gray-color:#8F8F8F;
+    --text-color:#D9D9D9;
+    --ruso-font:'Russo One', sans-serif;
+    --space-font:'Space Grotesk', sans-serif;
+    --openSans-font:'Open Sans', sans-serif;
+}
+body{
+    background-color: var(--body-color);
+    overflow-x:hidden ;
+    font-family: var(--openSans-font);
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 80px;
+    font-family: var(--ruso-font);
+    color: var(--white-color);
+    line-height: 96.4px;
+    margin-bottom: 30px;
+}
+.hero-text p{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    color: var(--gray-color);
+}
+h2{
+    font-family: var(--ruso-font);
+    font-size: 40px;
+    color: var(--white-color);
+}
+h3{
+    font-family: var(--ruso-font);
+    color: var(--aqua-color);
+    font-size: 30px;
+    line-height: 36.15px;
+    position: relative;
+    margin-bottom: 40px;
+}
+h3::after,
+.gallery-btns button.active::after{
+    position: absolute;
+    content: " ";
+    background-color: var(--aqua-color);
+    width: 97px;
+    height: 3px;
+    border-radius: 9px;
+    bottom: 0px;
+    left: 0;
+}
+.gallery-btns button.active::after{
+    width: 71px;
+}
+h4{
+    font-family: var(--ruso-font);
+    font-size: 25px;
+    color: var(--white-color);
+    margin-bottom: 0;
+}
+h5{
+    font-family: var(--ruso-font);
+    font-size: 18px;
+    color: var(--white-color);
+}
+h6{
+    font-family: var(--ruso-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--white-color);
+    margin: 5px auto;
+    text-align: center;
+
+}
+h6.active{
+    color: var(--aqua-color);
+
+}
+.navbar a, .navbar .nav-link{
+    color: var(--white-color);
+}
+/* Navbar */
+.nav-link{
+    color: var(--white-color) !important;
+    font-size: 25px;
+    line-height: 30px;
+}
+.navbar div .btn{
+    padding: 17px 32px;
+    border-radius: 10px;
+    color: var;
+    background: transparent;
+    border: 1px solid var(--main-color);
+}
+.navbar div .btn.active{
+    background-color: var(--main-color);
+}
+/* hero */
+.hero-bottom{
+    margin: auto;
+    width: fit-content;
+}
+.hero-bottom button{
+    border-radius: 10px;
+    color: var(--white-color);
+    background: var(--main-color);
+    font-size: 30px;
+    padding: 30px 60px;
+    border: 1px solid #8C4DE426;
+    margin: 0 30px;
+}
+/* partner */
+.partner h2{
+    color: var(--aqua-color);
+}
+/* join */
+.gallery-indicators div{
+   padding: 10px 30px;
+   background-color: var(--main-color);
+   border-radius: 10px;
+   cursor: pointer;
+}
+.gallery-btns button{
+    position: relative;
+    font-size: 20px;
+    border: none;
+    line-height: 24.1px;
+    color: var(--white-color);
+    background-color: transparent;
+}
+.indicator-num{
+    border: 1px solid var(--main-color);
+    padding: 13px;
+    border-radius: 16px;
+    color: var(--white-color);
+    font-size: 15px;
+}
+.gallery-btns button.active{
+    color: var(--aqua-color);
+}
+.step-text p{
+    font-size: 25px;
+    color: var(--gray-color);
+    margin-bottom: 40px;
+    line-height: 28.25px;
+}
+.step-text h2{
+    margin-bottom: 14px;
+}
+.img-con{
+    padding: 20px;
+    background-color: #22172A;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-con.active{
+    background-color: #32253B;
+}
+.parts{
+    background-color: rgba(37, 36, 35, 0.5);
+    padding: 35px;
+    border-radius: 15px;
+}
+.parts .par-img{
+    background-color: rgba(35, 38, 40, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.tools{
+    background-color: var(--main-color);
+    background-color: var(--main-color);
+    border: 1px solid var(--text-color);
+    border-radius: 63px;
+    width: fit-content;
+    padding: 20px;
+    gap: 50px;
+}
+.tools-controls{
+    background: var(--main-color);
+    height: 112px;
+    width: 23px;
+    border-radius: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -16px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    border: 1px solid #fff;
+    z-index: -1;
+}
+.para{
+    color: var(--gray-color);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19.14px;
+}
+.img-contai{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    opacity: 90%;
+    border-radius: 10px;
+    border: 1px solid #32253B;
+}
+.img-contai.active{
+    border: 1px solid #74FBFB;
+    background-color: #74FBFB;
+    opacity: 15%;
+}
+.close-box{
+    padding: 8px;
+    border: 1px solid #8F8F8F;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFFCFC;
+}
+.close-box .close-line{
+    top: -5px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.input-box input{
+    background-color: transparent;
+    border: 1px solid #FFF5F5;
+    padding: 12px 16px;
+    border-radius: 10px;
+}
+.input-box input::placeholder{
+    color: #FFFCFC;
+}
+.input-box input:focus{
+    background-color: transparent;
+}
+.input-box button{
+    color: #fdfdfd;
+    padding: 12px 16px;
+    background: #8C4DE4;
+    border-radius: 10px;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+.step-boxs div {
+    color: #F5F5F5;
+}
+.join .join-btn{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    padding: 4px 15px;
+    border: 1px solid rgba(140, 77, 228, 0.15);
+}
+.join > .container .first{
+    margin: 85px 0;
+}
+.join button{
+    border: none;
+    padding: 12px 50px;
+    border-radius: 10px;
+    color: var(--white-color);
+    background-color: var(--dark-color);
+}
+.join button.active{
+    background: var(--main-color);
+}
+.join h2.heading{
+    margin-bottom: 60px;
+}
+.accordion{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.accordion-item{
+    background-color: #22172A;
+    padding: 20px;
+}
+.accordion-header{
+    background-color: var(--main-color) !important;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/Rectangle\ 19.png);
+}
+.accordion-button:not(.collapsed){
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+.accordion-button{
+    background-color: #22172A !important;
+    outline: none;
+    font-size: 25px;
+    font-family: var(--ruso-font);
+    border: none;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.25)!important;
+}
+.accordion-body{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 100;
+}
+/* .join-faq div p a,
+.join-faq div .collapse .card{
+    color: var(--text-color);
+    font-size: 30px;
+}
+.join-faq div .collapse .card{
+    border: none;
+    border-top: 1px solid rgba(217, 217, 217, 0.25);
+    border-radius: 0;
+    line-height: 33.9px;
+}
+.join-faq div ,
+.join-faq div.collapse .card-body{
+    background-color: #22172A;
+} */
+/* .join-faq div .col-12{
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+} */
+/* Footer */
+footer div{
+    color: var(--text-color);
+}
+footer div p{
+    font-size: 26px;
+    line-height: 29.38px;
+    font-weight: 100;
+}
+footer div a,
+footer div span{
+    font-size: 30px;
+    line-height: 33.9px;
+    color: var(--white-color);
+    font-weight: 100;
+    
+}
+body > header > div > nav > div > button{
+    background-color: var(--aqua-color) !important;
+}
+@media (min-width:992px) {
+    .hero-text{
+        margin-bottom: 30px;
+    }
+    .partner{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:992px) {
+    h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    .join .first{
+        text-align: center;
+    }
+    .join .first button{
+        margin-bottom: 20px 0;
+    }
+    .join-faq div p a, .join-faq div .collapse .card{
+        font-size: 17px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    footer div a, footer div span,
+    .step-text p,
+    .hero-text p{
+        font-size: 18px;
+    }
+
+    footer div p,
+    .nav-link{
+        font-size: 18px;
+    }
+    .hero-bottom{
+        margin-bottom: 20px;
+    }
+    .hero-bottom button{
+        border-radius: 10px;
+        font-size: 15px;
+        padding: 15px 15px;
+        border: 1px solid #8C4DE426;
+        margin: 0px 0px;
+    }
+    body > section.how > div > div:nth-child(3) > div:nth-child(3) > div.col-12.col-lg-8.orde-1.mb-3 > div.position-relative.close-box.mb-2.mb-md-5 > div:nth-child(1),
+    .input-box input{
+        font-size: 12px;
+    }
+    body > section.how > div > div:nth-child(3) > div:nth-child(3) > div.col-12.col-lg-8.orde-1.mb-3 > div.input-box.position-relative.mb-5.w-100.w-lg-75 > button{
+        position: sticky;
+        margin-top: 10px;
+    }
+    .gallery-btns button,
+    body > footer > div > div:nth-child(2) > div.col-6.orde-3.col-lg-4 > div.mb-lg-5 > span{
+        font-size: 14px;
+    }
+    .gallery-btns button.active::after {
+        width: 57px;
+    }
+    body > header > div > nav > div > a > img,
+    body > section.hero > div > div.row > div:nth-child(1) > div > img,
+    .partner-con img{
+        max-width: 100px !important;
+    }
+    body > section.hero > div > div.hero-bottom > img:nth-child(1),
+    body > section.hero > div > div.hero-bottom > img:nth-child(3){
+        max-width: 50px;
+    }
+    .hero-text{
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
+    }
+    .orde-1{
+        order: 1;
+    }
+    .orde-2{
+        order: 2;
+    }
+    .orde-3{
+        order: 3;
+    }
+    body > footer > div > div:nth-child(2) > div.col-6.orde-2.col-lg-4 > div.socials.d-flex.align-items-center.mb-4.gap-3 > img{
+        max-width: 25px;
+    }
+    .para + div{
+        flex-wrap: wrap;
+    }
+    body > section.join > div > div.row.first > div.col-12.col-md-8.mb-3 > button{
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    .navbar div .btn{
+        padding: 17px 32px;
+        border-radius: 10px;
+    }
+    .accordion-body{
+        font-size: 13px;
+    }
+    .accordion-button{
+        font-size: 17px;
+    }
+}
+@media (max-width:480px) {
+    .join button{
+        padding: 12px 12px;
+    }
+    .join h2{
+        margin: 20px;
+    }
+}
